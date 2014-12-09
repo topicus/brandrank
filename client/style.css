@@ -1,0 +1,106 @@
+::-webkit-input-placeholder {
+   color: rgba(255,255,255,0.5) !important;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: white;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: white;
+}
+
+:-ms-input-placeholder {
+   color: white;
+}
+
+header{
+  position: absolute;
+  background-color: #03a9f4;
+  width: 100%;
+  height: 305px;
+  top: 0px;
+}
+h1.title{
+  margin-top: 0px;
+  color: white;
+  font-weight: 100;
+}
+h1.title span{
+  color: gold;
+}
+.search-box{
+  width: 260px;
+}
+.search-box .input-group-addon{
+  background-color: rgba(255,255,255, 0.2);
+  border: none;
+  color: white;
+}
+.search-input{
+  padding-top: 21px;
+  padding-bottom: 21px;
+  background-color: rgba(255,255,255, 0.2);
+  box-shadow: none;
+  border: none;
+  color: white !important;
+}
+.search-box:focus{
+
+}
+.row.header{
+  margin-bottom: 70px;
+}
+.margin-header{
+  margin-top: 50px;
+}
+.tweets{
+  list-style: none;
+  padding-left: 0;
+}
+.tweets li {
+  padding-top: 10px;
+  margin-bottom: 15px;
+}
+.account{
+  height: 285px;
+  width: 260px;
+  float: left;
+  border-radius: 5px;
+  box-shadow: 0px 2px 2px 2px #DDD;
+  text-align: center;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  position: relative;
+}
+.account .profile-data{
+  position: absolute;
+  top: 118px;
+  left: 17px;
+}
+.account .profile-picture{
+  width: 60px;
+  height: 60px;
+}
+.account .profile-data .profile-name{
+  position: absolute;
+  color: white;
+  top: -6px;
+  left: 70px;
+}
+.banner{
+  background: url(images/bg.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+
+  width: 100%;
+  height: 150px;
+  -webkit-border-top-left-radius: 5px;
+  -webkit-border-top-right-radius: 5px;
+  -moz-border-radius-topleft: 5px;
+  -moz-border-radius-topright: 5px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+

@@ -1,0 +1,12 @@
+{
+  "packages": {
+    "http": {},
+    "nvd3js": {},
+    "d3js-package": {},
+    "mizzao:bootstrap-3": {},
+    "moment": {},
+    "meteorhacks:npm": {},
+    "bootstrap-3": {},
+    "iron:router": {}
+  }
+}

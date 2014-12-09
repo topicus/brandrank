@@ -1,0 +1,70 @@
+<head>
+  <title>brandrank</title>
+</head>
+
+<body>
+
+</body>
+
+<template name="Home">
+  <header>
+    <button id="clear">Clear all</button>
+  </header>
+  <div class="container margin-header">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="row header">
+          <div class="col-md-6">
+            <h1 class="title">Presidenciables <span>2015</span></h1>
+          </div>
+          <div class="col-md-6">
+            <form class="new-taxonomy">
+              <div class="input-group search-box pull-right">
+                <span class="input-group-addon"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></span>
+                <input class="form-control search-input" type="text" name="taxonomy" placeholder="Agrega un precandidato" />
+              </div>
+            </form>
+          </div>
+        </div>
+        {{#each taxonomies}}
+          {{#if account}}
+          <div class="account">
+            {{> taxonomy}}
+              <h4>Total: {{total}}</h4>
+              <div class="row">
+                <div class="col-md-4">
+                  <h4 class="text-success">{{toPercent positive total}}%</h4>
+                </div>
+                <div class="col-md-4">
+                  <h4 class="text-danger">{{toPercent negative total}}%</h4>
+                </div>
+                <div class="col-md-4">
+                 <h4 class="text-info">{{toPercent neutral total}}%</h4>
+                </div>
+              </div>
+          </div>
+          {{/if}}
+        {{/each}}
+      </div>
+    </div>
+  </div>
+</template>
+
+<template name="Account">
+  <header>
+    <button id="clear">Clear all</button>
+  </header>
+</template>
+
+<template name="taxonomy">
+  <div style="background: url({{profile_banner_url}});background-size: cover;" class="banner">
+    <div class="profile-data">
+      <img src="{{profile_image}}" class="img-circle profile-picture"/>
+      <h4 class="profile-name">{{account}}</h4>
+    </div>
+  </div>
+</template>
+
+<template name="tweet">
+  <li>{{text}}</li>
+</template>

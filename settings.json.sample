@@ -1,0 +1,9 @@
+{
+  "idol_on_demand_api_key": "secret",
+  "twitter": {
+    "consumer_key": "secret",
+    "consumer_secret": "secret",
+    "access_token_key": "secret",
+    "access_token_secret": "secret"
+  }
+}
